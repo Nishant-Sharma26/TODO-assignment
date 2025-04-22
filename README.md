@@ -47,7 +47,3 @@ Install dependencies: npm install
 
 Start the frontend development server: npm run dev
 
-some screen shots :
-
-![alt text](<Screenshot 2025-04-22 at 10.54.02 PM.png>)
-![alt text](<Screenshot 2025-04-22 at 10.54.09 PM.png>)
