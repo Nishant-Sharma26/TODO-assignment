@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">
-        {/* Navbar */}
+     
         <nav className="bg-blue-600 p-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-white text-2xl font-bold">To-Do Manager</h1>
@@ -27,7 +27,7 @@ function App() {
           </div>
         </nav>
 
-        {/* Routes */}
+        
         <div className="container mx-auto mt-6">
           <Routes>
             <Route path="/" element={<AddTodo />} />

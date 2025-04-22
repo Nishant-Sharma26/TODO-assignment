@@ -53,7 +53,7 @@ function TodoList() {
     <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto">
       <h2 className="text-xl font-semibold mb-4">Task List</h2>
 
-      {/* Filter Buttons */}
+    
       <div className="flex justify-between mb-4">
         <button
           onClick={() => setFilter('all')}
@@ -75,7 +75,7 @@ function TodoList() {
         </button>
       </div>
 
-      {/* Todo List */}
+
       {loading ? (
         <div className="text-center">
           <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto"></div>
