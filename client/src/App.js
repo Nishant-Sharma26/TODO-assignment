@@ -63,7 +63,6 @@ function App() {
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
         <h1 className="text-2xl font-bold mb-4 text-center">To-Do Manager</h1>
 
-        {/* Add Todo Form */}
         <div className="mb-4">
           <input
             type="text"
@@ -80,7 +79,6 @@ function App() {
           </button>
         </div>
 
-        {/* Filter Buttons */}
         <div className="flex justify-between mb-4">
           <button
             onClick={() => setFilter('all')}
@@ -102,7 +100,6 @@ function App() {
           </button>
         </div>
 
-        {/* Todo List */}
         {loading ? (
           <div className="text-center">
             <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto"></div>
