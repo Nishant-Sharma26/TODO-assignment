@@ -22,7 +22,6 @@ const todoSchema = new mongoose.Schema({
 
 const Todo = mongoose.model('Todo', todoSchema);
 
-// Get all todos
 app.get('/todos', async (req, res) => {
   try {
     const todos = await Todo.find();
@@ -32,7 +31,6 @@ app.get('/todos', async (req, res) => {
   }
 });
 
-// Create a new todo
 app.post('/todos', async (req, res) => {
   try {
     const todo = new Todo({ title: req.body.title });
@@ -43,7 +41,7 @@ app.post('/todos', async (req, res) => {
   }
 });
 
-// Toggle completed status
+
 app.put('/todos/:id', async (req, res) => {
   try {
     const todo = await Todo.findById(req.params.id);
@@ -56,7 +54,6 @@ app.put('/todos/:id', async (req, res) => {
   }
 });
 
-// Delete a todo
 app.delete('/todos/:id', async (req, res) => {
   try {
     const todo = await Todo.findByIdAndDelete(req.params.id);
